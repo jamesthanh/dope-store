@@ -58,3 +58,7 @@
 /Users/jamesmbp/Desktop/Projects/dope-shop/API/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/e_sqlite3.dll
 /Users/jamesmbp/Desktop/Projects/dope-shop/API/obj/Debug/netcoreapp3.1/API.csproj.CopyComplete
 /Users/jamesmbp/Desktop/Projects/dope-shop/API/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll
+/Users/jamesmbp/Desktop/Projects/dope-shop/API/bin/Debug/netcoreapp3.1/Core.dll
+/Users/jamesmbp/Desktop/Projects/dope-shop/API/bin/Debug/netcoreapp3.1/Infrastucture.dll
+/Users/jamesmbp/Desktop/Projects/dope-shop/API/bin/Debug/netcoreapp3.1/Infrastucture.pdb
+/Users/jamesmbp/Desktop/Projects/dope-shop/API/bin/Debug/netcoreapp3.1/Core.pdb

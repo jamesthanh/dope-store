@@ -430,6 +430,31 @@
         "runtime": {
           "lib/netcoreapp3.0/System.Text.Json.dll": {}
         }
+      },
+      "Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.dll": {}
+        }
+      },
+      "Infrastucture/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Core": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "3.1.5",
+          "Microsoft.EntityFrameworkCore.Sqlite": "3.1.5"
+        },
+        "compile": {
+          "bin/placeholder/Infrastucture.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infrastucture.dll": {}
+        }
       }
     }
   },
@@ -1141,13 +1166,22 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Core/1.0.0": {
+      "type": "project",
+      "path": "../Core/Core.csproj",
+      "msbuildProject": "../Core/Core.csproj"
+    },
+    "Infrastucture/1.0.0": {
+      "type": "project",
+      "path": "../Infrastucture/Infrastucture.csproj",
+      "msbuildProject": "../Infrastucture/Infrastucture.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Microsoft.EntityFrameworkCore >= 3.1.5",
-      "Microsoft.EntityFrameworkCore.Design >= 3.1.5",
-      "Microsoft.EntityFrameworkCore.Sqlite >= 3.1.5"
+      "Infrastucture >= 1.0.0",
+      "Microsoft.EntityFrameworkCore.Design >= 3.1.5"
     ]
   },
   "packageFolders": {
@@ -1177,7 +1211,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/jamesmbp/Desktop/Projects/dope-shop/Infrastucture/Infrastucture.csproj": {
+              "projectPath": "/Users/jamesmbp/Desktop/Projects/dope-shop/Infrastucture/Infrastucture.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -1189,15 +1227,7 @@
     "frameworks": {
       "netcoreapp3.1": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": {
-            "target": "Package",
-            "version": "[3.1.5, )"
-          },
           "Microsoft.EntityFrameworkCore.Design": {
-            "target": "Package",
-            "version": "[3.1.5, )"
-          },
-          "Microsoft.EntityFrameworkCore.Sqlite": {
             "target": "Package",
             "version": "[3.1.5, )"
           }
