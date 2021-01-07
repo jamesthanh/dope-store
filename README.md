@@ -1,4 +1,8 @@
 # dope-store
+
 Fullstack .NET + Angular eCommerce webapp
 
-# owo
+# usages
+
+- cd into API
+- run: dotnet watch run
